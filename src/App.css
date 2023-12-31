@@ -1,0 +1,97 @@
+.counselordiv {
+  max-height: 100vh; /* Set the desired maximum height for the scrollable div */
+  overflow-y: scroll;
+  scrollbar-width: thin; /* Firefox scrollbar width */
+  scrollbar-color: transparent transparent; /* Firefox scrollbar color */
+  /* cursor: grab; */
+}
+
+.counselordiv::-webkit-scrollbar {
+  width: 8px; /* Adjust the width as needed */
+  scrollbar-color: blue red;
+  cursor: grab;
+}
+
+.counselordiv::-webkit-scrollbar-thumb {
+  background: transparent;
+  cursor: grab;
+}
+
+.counselordiv::-webkit-scrollbar-thumb:vertical {
+  background: red; /* Set the scrollbar color to red */
+  border-radius: 3px; /* Adjust the border radius as needed */
+  cursor: grab;
+}
+
+.counselordiv::-webkit-scrollbar-thumb:hover {
+  /* background: darkred;  */
+
+  cursor: grab;
+}
+.disappear::-webkit-scrollbar-thumb:hover {
+  /* background: darkred; */
+  cursor: grab;
+  cursor: grab;
+}
+
+/* .disappear {
+  scrollbar-width: none !important;
+  scrollbar-color: transparent !important;
+} */
+.disappear::-webkit-scrollbar {
+  width: 8px;
+  background: transparent;
+  scrollbar-color: transparent;
+}
+
+.disappear::-webkit-scrollbar-thumb:vertical {
+  background: rgba(255, 0, 0, 0.296); /* Set the scrollbar color to red */
+  scrollbar-color: transparent;
+  border-radius: 3px; /* Adjust the border radius as needed */
+  cursor: grab;
+}
+
+.counselordiv::-webkit-scrollbar-track {
+  background-color: rgba(255, 0, 0, 0.088);
+  cursor: grab;
+}
+
+.disappear::-webkit-scrollbar-track {
+  background-color: rgba(255, 0, 0, 0.088);
+  cursor: grab;
+}
+
+.placeholder {
+  background-color: #444;
+  min-height: 12px;
+  border-radius: 100px;
+  opacity: 0.1;
+  min-width: 10px;
+  animation: fading 1.5s infinite;
+}
+.post {
+  width: 90%;
+  margin-left: 14px;
+  padding: 0 10px;
+
+  padding-top: 15px;
+  box-shadow: 0 0 0 1px rgba(63, 63, 68, 0.05),
+    0 1px 2px 0 rgba(63, 63, 68, 0.15);
+}
+.post-image {
+  width: 100%;
+  height: 5px;
+  border-radius: 0;
+}
+
+@keyframes fading {
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
